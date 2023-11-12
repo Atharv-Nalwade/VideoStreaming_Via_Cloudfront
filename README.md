@@ -4,7 +4,7 @@ Welcome to the Video Streaming Service, a web application built using CloudFront
 
 ## Architecture Diagram
 
-![Architecture Diagram](assets/Arch%20Diagram.jpg)
+- Will be updated soon
 
 ## Features
 
@@ -12,7 +12,7 @@ Welcome to the Video Streaming Service, a web application built using CloudFront
 
 - **S3 Storage:** Videos are securely stored in Amazon S3, a highly durable and scalable object storage service. S3 provides the backbone for reliable video storage and retrieval.
 
-- **React Frontend:** The user interface is built using React, a popular JavaScript library for building user interfaces. The React application ensures a responsive and dynamic user experience.
+- **EJS Frontend:** The application uses the EJS templating engine for rendering dynamic content on the server side, providing a responsive and customizable user interface.
 
 - **Video Playback:** Users can enjoy seamless video playback directly in the browser. The built-in HTML5 video player supports common video formats, providing a user-friendly and familiar interface.
 
@@ -22,18 +22,23 @@ To run the application locally, follow these steps:
 
 1. Clone the repository to your local machine.
 2. Install the project dependencies.
-3. Set up your environment variables. Create a `.env` file in the root directory and provide the necessary configuration, including the `REACT_APP_VIDEO_LINK` for the video source.
-
-   ```env
-   REACT_APP_VIDEO_LINK=https://CLOUDFRONT_DISTRIBUTION_DOMAIN_NAME/S3_OBJECT_KEY
-   ```
-4. Run the development server.
+3. Set up your environment variables. Create a `.env` file in the root directory and provide the necessary configuration, including 
+```
+VIDEO_LINK='CLOUDFRONT-DISTRIBUTION-KEY/S3-Object-ID'
+CLOUDFRONT_KEYPAIR_ID='CLOUDFRONT-KEYPAIRID'
+CLOUDFRONT_PRIVATE_KEY='-----BEGIN PRIVATE KEY-----
+                           PRIVATE-KEY-GOES-HERE
+                        -----END PRIVATE KEY-----'
+```
+4. Run the server using
+```
+node server.js
+```
 
 ## Future Scope
 
-- **Enhanced Security:** Implementing signed URLs soon.
-- **Temporary Access:** Generate time-limited URLs.
-- **Controlled Access:** Useful for restricting video access to paid subscribers or authenticated users.
+- **Video Transcoding:** Implement video transcoding services to support multiple video formats and resolutions.
+- **Multiple Videos Streaming:** Enhance the application to support the streaming of a diverse library of videos. Users should be able to choose and stream their preferred video from the available collection.
 
 
 ## Note
