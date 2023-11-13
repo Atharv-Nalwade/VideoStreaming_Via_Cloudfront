@@ -1,10 +1,10 @@
-# Video Streaming Service with CloudFront, S3, and React
+# Video Streaming Service with CloudFront, S3, and EJS
 
 Welcome to the Video Streaming Service, a web application built using CloudFront, S3, and React. This project provides a simple and effective way to stream videos, utilizing the power of Amazon Web Services (AWS) to deliver a seamless and scalable video streaming experience.
 
 ## Architecture Diagram
 
-- Will be updated soon
+![Architecture Diagram](assets/Latest%20Arch%20Diagram.png)
 
 ## Features
 
