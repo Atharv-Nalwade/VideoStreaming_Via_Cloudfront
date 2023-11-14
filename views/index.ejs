@@ -8,6 +8,17 @@
 <body style="text-align: center;">
   <h2>Welcome to my Video Streaming Service</h2>
       <h3>Built using CloudFront, S3 and React</h3>
+      <h4>Select which video you want to stream</h4>
+      <div>
+        <form action="/" method="POST">
+          <select name="video">
+            <option value="SampleVideo.mp4">Video 1</option>
+            <option value="SampleVideo1.mp4">Video 2</option>
+            <option value="SampleVideo2.mp4">Video 3</option>
+          </select>        
+          <button type="submit">Submit</button>
+      </div>
+      
       <video width='700' height='400' controls>
     <source src="<%= signedUrl %>" type="video/mp4">
     </video>
