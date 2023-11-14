@@ -24,7 +24,7 @@ To run the application locally, follow these steps:
 2. Install the project dependencies.
 3. Set up your environment variables. Create a `.env` file in the root directory and provide the necessary configuration, including 
 ```
-VIDEO_LINK='CLOUDFRONT-DISTRIBUTION-KEY/S3-Object-ID'
+DISTRIBUTION_LINK='CLOUDFRONT-DISTRIBUTION-KEY'
 CLOUDFRONT_KEYPAIR_ID='CLOUDFRONT-KEYPAIRID'
 CLOUDFRONT_PRIVATE_KEY='-----BEGIN PRIVATE KEY-----
                            PRIVATE-KEY-GOES-HERE
@@ -38,7 +38,6 @@ node server.js
 ## Future Scope
 
 - **Video Transcoding:** Implement video transcoding services to support multiple video formats and resolutions.
-- **Multiple Videos Streaming:** Enhance the application to support the streaming of a diverse library of videos. Users should be able to choose and stream their preferred video from the available collection.
 
 
 ## Note
